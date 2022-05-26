@@ -1,0 +1,12 @@
+stages:
+  - build
+
+
+build:
+  stage: build
+  tags:
+    - build
+  only:
+    - master
+  script:
+    - ./dockerbuild.sh
